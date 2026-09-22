@@ -3,7 +3,7 @@
 # Section: See syllabus, schedule, or Canvas course for section
 # Professor: AlSobeh
 # Date: 2026-21-9
-# Assignment #: project 4
+# Assignment #: project 4 part 1
 # By submitting this assignment, I declare that the source code contained
 # in this assignment was written solely by me, unless specifically provided
 # in the assignment. I attest that no part of this assignment, in whole or
