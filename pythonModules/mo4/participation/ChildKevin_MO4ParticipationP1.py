@@ -7,9 +7,9 @@ print()
 # create the another trip variable and set it to "y"
 another_trip = "y"
 # get input from the user
-miles_driven = float(input("Enter miles driven:         "))
-gallons_used = float(input("Enter gallons of gas used:  "))
-cost_per_gallon = float(input("Cost per gallon"))
+miles_driven = float(input("Enter miles driven: \t"))
+gallons_used = float(input("Enter gallons of gas used: \t"))
+cost_per_gallon = float(input("Cost per gallon: \t"))
 
 while another_trip == "y":
     if miles_driven <= 0:
@@ -41,6 +41,6 @@ while another_trip == "y":
     another_trip = input("Get entries for another trip? (y/n): ")
     print()
 print("Bye")
-
+,
 
 
