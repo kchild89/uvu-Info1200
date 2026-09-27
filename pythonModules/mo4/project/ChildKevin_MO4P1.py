@@ -29,29 +29,29 @@ while choice.lower() == "y":
     
     # Check the grade range and display the matching letter grade.
     if i >= 0 and i <= 59:
-        print("E")
+        print("Letter grade: E")
     elif i >= 60 and i <= 63:
-        print("D-")
+        print("Letter grade: D-")
     elif i >= 64 and i <= 66:
-        print("D")
+        print("Letter grade: D")
     elif i >= 67 and i <= 69:
-        print("D+")
+        print("Letter grade: D+")
     elif i >= 70 and i <= 73:
-        print("C-")
+        print("Letter grade: C-")
     elif i >= 74 and i <= 76:
-        print("C")
+        print("Letter grade: C")
     elif i >= 77 and i <= 79:
-        print("C+")
+        print("Letter grade: C+")
     elif i >= 80 and i <= 83:
-        print("B-")
+        print("Letter grade: B-")
     elif i >= 84 and i <= 86:
-        print("B")
+        print("Letter grade: B")
     elif i >= 87 and i <= 89:
-        print("B+")
+        print("Letter grade: B+")
     elif i >= 90 and i <= 93:
-        print("A-")
+        print("Letter grade: A-")
     elif i >= 94 and i <= 100:
-        print("A")
+        print("Letter grade: A")
     else:
         # Display an error message for grades outside the valid range.
         print("Please Enter A Numerical Grade Between 0-100")
