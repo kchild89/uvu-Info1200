@@ -19,7 +19,13 @@
 print("Kevin Child's Tip Calculator App")
 print()
 
-mealCost = input("Cost of Meal: ")
+mealCost = float(input("Cost of the meal: "))
 
 for percentage in range(15, 26, 5):
-    print(str(percentage) + "%") 
+    print()
+    print(str(percentage),"%", sep="")
+    tipPercent = percentage / 100
+    tipAmount = mealCost * tipPercent
+    total = mealCost + tipAmount
+    print("Tip amount: ", round(tipAmount, 2))
+    print("Total amount: ", round(total, 2))
