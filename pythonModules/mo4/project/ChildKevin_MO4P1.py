@@ -15,7 +15,7 @@
 
 #!/usr/bin/env python3
 
-# display name and app
+# Display the app title and a blank line for spacing.
 print("Kevin Child's Letter Grade Converter App")
 print()
 
@@ -25,37 +25,56 @@ choice = "y"
 # Repeat while the user enters y, allowing either uppercase or lowercase.
 while choice.lower() == "y":
     # Get the numerical grade and convert it to an integer.
-    i = int(input("Enter Numerical Grade: "))
+    i = int(input("Enter numerical grade: "))
     
-    # Check the grade range and display the matching letter grade.
-    if i >= 0 and i <= 59:
-        print("Letter grade: E")
-    elif i >= 60 and i <= 63:
-        print("Letter grade: D-")
-    elif i >= 64 and i <= 66:
-        print("Letter grade: D")
-    elif i >= 67 and i <= 69:
-        print("Letter grade: D+")
-    elif i >= 70 and i <= 73:
-        print("Letter grade: C-")
-    elif i >= 74 and i <= 76:
-        print("Letter grade: C")
-    elif i >= 77 and i <= 79:
-        print("Letter grade: C+")
-    elif i >= 80 and i <= 83:
-        print("Letter grade: B-")
-    elif i >= 84 and i <= 86:
-        print("Letter grade: B")
-    elif i >= 87 and i <= 89:
-        print("Letter grade: B+")
-    elif i >= 90 and i <= 93:
-        print("Letter grade: A-")
-    elif i >= 94 and i <= 100:
+    # Reject grades outside 0-100, then check cutoffs from highest to lowest.
+    # Only the first matching branch runs.
+    if i > 100 or i < 0:
+        print("Please enter a numerical grade between 0-100")
+    elif i >= 94:  # 94-100 earns an A.
         print("Letter grade: A")
+        print()
+    elif i >= 90:  # 90-93 earns an A-.
+        print("Letter grade: A-")
+        print()
+    elif i >= 87:  # 87-89 earns a B+.
+        print("Letter grade: B+")
+        print()
+    elif i >= 84:  # 84-86 earns a B.
+        print("Letter grade: B")
+        print()
+    elif i >= 80:  # 80-83 earns a B-.
+        print("Letter grade: B-")
+        print()
+    elif i >= 77:  # 77-79 earns a C+.
+        print("Letter grade: C+")
+        print()
+    elif i >= 74:  # 74-76 earns a C.
+        print("Letter grade: C")
+        print()
+    elif i >= 70:  # 70-73 earns a C-.
+        print("Letter grade: C-")
+        print()
+    elif i >= 67:  # 67-69 earns a D+.
+        print("Letter grade: D+")
+        print()
+    elif i >= 64:  # 64-66 earns a D.
+        print("Letter grade: D")
+        print()
+    elif i >= 60:  # 60-63 earns a D-.
+        print("Letter grade: D-")
+        print()
+    elif i < 60:  # 0-59 earns an E.
+        print("Letter grade: E")
+        print()
     else:
-        # Display an error message for grades outside the valid range.
-        print("Please Enter A Numerical Grade Between 0-100")
+            # This fallback is unreachable because earlier checks cover all integers.
+            print("Please Enter A numerical grade between 0-100")
+            print()
 
-    # Ask whether the user wants to convert another grade.
-    choice = input("Continue? (y/n): ") 
-   
+    # Ask whether to convert another grade; any response other than y or Y ends the loop.
+    choice: str = input("Continue? (y/n): ")
+    print()
+
+# Display a goodbye message after the user exits the loop.
+print("Bye!")
