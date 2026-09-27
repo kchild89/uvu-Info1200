@@ -19,13 +19,18 @@
 print("Kevin Child's Tip Calculator App")
 print()
 
+# Get the meal cost and convert the input to a decimal number.
 mealCost = float(input("Cost of the meal: "))
 
+# Calculate tips at 15%, 20%, and 25% (the range stops before 26).
 for percentage in range(15, 26, 5):
+    # Display the tip percentage for this calculation.
     print()
     print(str(percentage),"%", sep="")
+    # Convert the percentage to a decimal, then calculate the tip and total.
     tipPercent = percentage / 100
     tipAmount = mealCost * tipPercent
     total = mealCost + tipAmount
+    # Display the tip and total rounded to two decimal places.
     print("Tip amount: ", round(tipAmount, 2))
     print("Total amount: ", round(total, 2))
