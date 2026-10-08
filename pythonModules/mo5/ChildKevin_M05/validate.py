@@ -18,13 +18,22 @@ def get_int(prompt, low, high):
             if low < value <= high:
                 return value
             else:
-                print(f"Enter a integer between {low} and {high}.")
+                print(f"Enter an integer between {low} and {high}.")
         except ValueError:
             print("Please enter a valid number.")
 
 def main():
     choice = "y"
     while choice.lower() == "y":
-        floatValue = get_float("Enter a number between 0-1000:\t", 0, 1000)
-        intValue = get_int("Enter a interger between 0-1000:\t", 0, 1000)
+        floatValue = get_float("Enter a number greater than 0 and up to 1000:\t", 0, 1000)
+        intValue = get_int("Enter an integer greater than 0 and up to 50:\t", 0, 50)
+        print(floatValue)
+        print(intValue)
+
+        choice = input("Continue? (y/n): ")
+        print()
+
+    print("Bye!")
         
+if __name__ == "__main__":
+    main()

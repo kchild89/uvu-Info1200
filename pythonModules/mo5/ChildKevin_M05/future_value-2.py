@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+
+import validate as v
         
 def calculate_future_value(monthly_investment, yearly_interest, years):
     # convert yearly values to monthly values
@@ -13,16 +15,6 @@ def calculate_future_value(monthly_investment, yearly_interest, years):
         future_value += monthly_interest
 
     return future_value
-
-def getValue(high, low):
-    number = float(input("Enter number between 1-100:\t"))
-    low = 0
-    high = 100
-    while number > low and number <= high:
-        return 
-    else:
-        print("Please enter a number between 1-100")
-
 
 def main():
     choice = "y"
