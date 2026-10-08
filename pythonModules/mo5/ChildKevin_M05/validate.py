@@ -9,7 +9,7 @@ def get_float(prompt, low, high):
             else:
                 print(f"Enter a number between {low} and {high}.")   
         except ValueError:
-            print("Please enter a valid number.")
+            print("Enter a valid number.")
 
 def get_int(prompt, low, high):
     while True:
@@ -20,7 +20,7 @@ def get_int(prompt, low, high):
             else:
                 print(f"Enter an integer between {low} and {high}.")
         except ValueError:
-            print("Please enter a valid number.")
+            print("Enter a valid number.")
 
 def main():
     choice = "y"

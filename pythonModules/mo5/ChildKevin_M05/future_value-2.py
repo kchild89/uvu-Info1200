@@ -17,12 +17,14 @@ def calculate_future_value(monthly_investment, yearly_interest, years):
     return future_value
 
 def main():
+    print("Kevin Child's Validated Future Value App")
+    print()
     choice = "y"
     while choice.lower() == "y":
         # get input from the user
-        monthly_investment = float(input("Enter monthly investment:\t"))
-        yearly_interest_rate = float(input("Enter yearly interest rate:\t"))
-        years = int(input("Enter number of years:\t\t"))
+        monthly_investment = v.get_float("Enter monthly investment:\t", 0, 1000)
+        yearly_interest_rate = v.get_float("Enter yearly interest rate:\t", 0, 15)
+        years = v.get_int("Enter number of years:\t\t", 0, 50)
 
         # get and display future value
         future_value = calculate_future_value(
