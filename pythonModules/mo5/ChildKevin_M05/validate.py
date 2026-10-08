@@ -25,5 +25,6 @@ def get_int(prompt, low, high):
 def main():
     choice = "y"
     while choice.lower() == "y":
-        floatValue = get_float("Enter a number between 0-1000: ", 0, 1000)
+        floatValue = get_float("Enter a number between 0-1000:\t", 0, 1000)
+        intValue = get_int("Enter a interger between 0-1000:\t", 0, 1000)
         
