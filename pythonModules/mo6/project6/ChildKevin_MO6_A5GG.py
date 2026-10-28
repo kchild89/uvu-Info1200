@@ -12,6 +12,7 @@ def get_limit():
 
 def play_game(limit):
     number = random.randint(1, limit)
+    count = 0
     print(f"I'm thinking of a number from 1 to {limit}\n")
 
     while True:
@@ -19,10 +20,11 @@ def play_game(limit):
         if guess < number:
             print("Too low.")
             count += 1
-        elif guess >= number:
+        elif guess > number:
             print("Too high.")
             count += 1
         elif guess == number:
+            count += 1
             print(f"You guessed it in {count} tries.\n")
             return
 
@@ -32,7 +34,7 @@ def main():
     again = "y"
     while again.lower() == "y":
         limit = get_limit()
-        play_game()
+        play_game(limit)
         
         again = input("Play again? (y/n): ")
         print()
