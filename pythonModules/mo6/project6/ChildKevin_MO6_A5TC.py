@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-TAX = 0.06
+tax = 0.06
 
-def sales_tax(total)
-    sales_tax = total * tax
-    return total
+def sales_tax(total):
+    tax_amount = total * tax
+    return tax_amount
 
 def main():
     print("Sales Tax Calculator\n")
