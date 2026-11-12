@@ -27,7 +27,12 @@ for i, item in enumerate(names, start=1):
     print(f"{i}. {item}")
 
 
-inventory = ["sword", "shield", "potion", "armor", "boots"]
+inventory = ["sword", "shield", "potion", "armor", "boots", "axe"]
+
+inventory[0:2]
+inventory[:3]
+inventory[0:4:2]
+
 
 prices = [100, 150, 50, 200, 75]
 
@@ -97,10 +102,12 @@ sorted_foodlist = sorted(foodlist, key=str.lower)
 print(sorted_foodlist)
 
 
-score_list = [5, 15, 84, 3, 14, 2, 8, 10, 14, 25]
+score_list = [5, 15, 84, 3, 14, 2, 8, 10, 14, 25, 5, 15, 84, 3, 14, 2, 8, 10, 14, 25, 5, 15, 84, 3, 14, 2, 8, 10, 14, 25, 5, 15, 84, 3, 14, 2, 8, 10, 14, 25]
 minimum = min(score_list)
 maximum = max(score_list) 
 total = sum(score_list) 
 total = sum(score_list)
 
 print(f"Minimum: {minimum}, Maximum: {maximum}, Total: {total}")
+
+
