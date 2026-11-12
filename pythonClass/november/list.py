@@ -46,3 +46,10 @@ for score in scores:
     print(score)
 
 
+# 3 rows x 4 columns - student grades
+students = [["John", 85, 90, 78],
+            ["Jane", 92, 88, 95],
+            ["Mike", 75, 80, 70]]
+print(students[1][2])
+
+
