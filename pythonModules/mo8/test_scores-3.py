@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import statistics
+
 def display_welcome():
     print("The Test Scores program")
     print("Enter 'x' to exit")
@@ -22,6 +24,13 @@ def get_scores():
 def process_scores(score_total, count):
     # calculate average score
     average = score_total / count
+
+
+    scores = score_list
+    score_total = sum(scores)
+    count = len(scores)
+    average = score_total / count 
+
                 
     # format and display the result
     print()
